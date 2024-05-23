@@ -91,7 +91,7 @@ const Footer = (targetTagId, linkPrefix) => {
     footerSection2.classList.add('footer-section');
     
     var p = document.createElement('p');
-    p.innerHTML = '&copy; 2024 Bean Haven. All rights reserved.';
+    p.innerHTML = '&copy; 2024 Bean Haven. All rights reserved. Melbert Marafo @ <a href="https://codexcancerion.github.io/">codexcancerion.github.io</a>';
     
     footerSection2.appendChild(p);
     
