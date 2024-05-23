@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Haven</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/globals.css">
+    <link rel="stylesheet" href="../styles/mainComponentsStyles.css">
+    
+    <link rel="stylesheet" href="../styles/contact.css">
+    
+    <script src="../data/products.js"></script>
+    <script src="../components/mainComponents.js"></script>
+</head>
+<body>
+    <header id="header">
+        <script>
+            Navbar("header", '../');
+        </script>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="page-title">
+                <h1 class="page-title">CONTACT US
+                    <hr>
+                </h1>
+            </div>
+
+            <div class="contact-section">
+                <div class="contact">
+                    <i class="material-icons">email</i>
+                    <h1>Email</h1>
+                    <p>services@beanhaver.com</p>
+                </div>
+                <div class="contact">
+                    <i class="material-icons">phone_iphone</i>
+                    <h1>Phone Number</h1>
+                    <p>+63 (945) 123-4567</p>
+                </div>
+                <div class="contact">
+                    <i class="material-icons">local_phone</i>
+                    <h1>Landline</h1>
+                    <p>987-6543</p>
+                </div>
+            </div>
+
+            <div class="contact-section message">
+                <h1>Have a question or feedback? Send us a quick message!</h1>
+                <form id="contactForm">
+                    <div class="form-group width-half">
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </div>
+                    <div class="form-group width-half">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group ">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="width-third">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        
+    </main>
+    
+    <footer id="footer">
+        <script>
+            Footer('footer', '../');
+        </script>
+    </footer>
+    
+</body>
+</html>

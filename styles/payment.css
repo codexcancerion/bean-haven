@@ -1,0 +1,19 @@
+
+a {
+    align-self: center;
+}
+.payment .input-holder.radio {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.payment .input-holder {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.payment .input-holder input{
+    border-radius: 10px;
+    padding: 10px;
+}

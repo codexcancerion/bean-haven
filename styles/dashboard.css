@@ -1,0 +1,23 @@
+.dashboard-section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.dashboard-section.message {
+    display: flex;
+    flex-direction: column;
+}
+.dashboard-section .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25vh;
+}
+.dashboard-section .info h1 {
+    color: var(--mocha-brown);
+}
+.dashboard-section .info p {
+    color: var(--caramel-brown);
+    margin: 0;
+}

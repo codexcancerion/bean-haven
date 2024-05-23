@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Haven</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/globals.css">
+    <link rel="stylesheet" href="../styles/mainComponentsStyles.css">
+    
+    <link rel="stylesheet" href="../styles/location.css">
+    
+    <script src="../data/products.js"></script>
+    <script src="../components/mainComponents.js"></script>
+</head>
+<body>
+    <header id="header">
+        <script>
+            Navbar("header", '../');
+        </script>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="page-title">
+                <h1 class="page-title">WHERE CAN YOU FIND US?
+                    <hr>
+                </h1>
+            </div>
+
+            <div class="location-section">
+                <div class="left">
+                    <h1>Our Main Location</h1>
+                    <p>4th Floor, Coffee Building, <br>KM5 Pico, La Trinidad, Benguet</p>
+                </div>
+                <div class="right map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.597095623204!2d120.58553217491264!3d16.44527648429005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391a3c0c4f08d1f%3A0xf76024a399d98135!2sKing&#39;s%20College%20of%20the%20Philippines%20(KCP)!5e0!3m2!1sen!2sph!4v1716298158375!5m2!1sen!2sph"></iframe>
+                </div>
+            </div>
+
+            <div class="location-section parking">
+                <div class="left parking">
+                    <img src="../img/parking.jpg">
+                </div>
+                <div class="right">
+                    <h1>Available Parking Spaces</h1>
+                    <p>Bean Haven provides hassle-free access <br>
+                        with ample parking spaces available. <br>
+                        Enjoy your favorite coffee without <br>
+                        worrying about parking, only at Bean Haven."</p>
+                </div>
+            </div>
+
+            <div class="location-section">
+                <div class="left">
+                    <h1>Public Transportation Nearby</h1>
+                    <p>Bean Haven carefully picked a location <br>
+                        which offers easy access to public transportation, <br>
+                        making it convenient for all coffee lovers to visit.</p>
+                </div>
+                <div class="right jeep">
+                    <img src="../img/jeep.jpg">
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer id="footer">
+        <script>
+            Footer('footer', '../');
+        </script>
+    </footer>
+    
+</body>
+</html>

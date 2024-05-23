@@ -1,0 +1,21 @@
+
+.sub-section.category {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--caramel-brown);
+    flex-wrap: wrap;
+}
+.sub-section.category .category-tag {
+    padding: 0 20px;
+    background-color: var(--latte-cream);
+    border-radius: 10px;
+    color: var(--mocha-brown);
+    transition: .5s;
+    margin: 10px 0;
+}
+.sub-section.category .category-tag:hover {
+    color: var(--latte-cream);
+    background-color: var(--mocha-brown);
+}

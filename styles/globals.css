@@ -1,0 +1,85 @@
+/* Color Variables */
+:root {
+    --espresso-black: #1C1C1C;
+    --mocha-brown: #3E2723;
+    --caramel-brown: #8D6E63;
+    --latte-cream: #D7CCC8;
+    --coal-grey: #4E4E4E;
+}
+
+* {
+    font-family: 'Poppins';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section {
+    min-height: 90vh;
+    padding: 10vh 10vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-title {
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 5vh;
+    width: fit-content;
+    /* justify-self: center; */
+    align-self: center;
+}
+
+.page-title hr {
+    width: 100%;
+    height: 4px;
+    background-color: var(--caramel-brown);
+    border: none;
+}
+
+button {
+    border-radius: 10px;
+    border: none;
+    transition: .5s;
+}
+button.primary {
+    height: 50px;
+    padding: 0 20px;
+    background-color: var(--caramel-brown);
+    color: white;
+}
+button.primary:hover {
+    background-color: var(--latte-cream);
+    color: var(--mocha-brown);
+}
+
+button.card-btn {
+    background-color: var(--caramel-brown);
+    border-radius: 5px !important;
+    color: white;
+    /* height: 20px; */
+    padding: 10px;
+}
+button.card-btn:hover {
+    background-color: var(--latte-cream);
+    color: var(--mocha-brown);
+}
+
+.width-full {
+    width: 100%;
+}
+.width-half {
+    width: 50%;
+}
+
+.width-third {
+    width: 33%;
+}
+

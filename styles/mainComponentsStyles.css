@@ -1,0 +1,228 @@
+
+
+/* NAVBAR */
+nav {
+    background-color: var(--espresso-black);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 20px; */
+    width: 100vw !important;
+}
+nav .portion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60%;
+    padding: 0 20px;
+}
+.portion .logo-holder {
+    display: flex;
+    align-items: center;
+}
+.portion .logo-holder img {
+    height: 50px;
+    border-radius: 50%;
+}
+.portion .logo-holder h3 {
+    margin-left: 20px;
+}
+.portion.nav-logo a{
+    color: var(--latte-cream);
+}
+.portion.nav-links a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.portion.nav-links .link {
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transition: .5s;
+    border-radius: 10px;
+    color: var(--latte-cream);
+    font-size: small;
+}
+.portion.nav-links .link:hover {
+    background-color: var(--mocha-brown);
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        background-color: var(--espresso-black);
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap !important;
+        align-items: center;
+        /* justify-content: space-between; */
+        width: 100vw !important;
+    }
+    nav .portion {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 60%;
+        padding: 0 20px;
+    }
+}
+
+
+/* HERO */
+.hero {
+    min-height: 90vh;
+    background-image: url('../img/bean-bg.jpg');
+    background-size: cover;
+}
+.hero .bg-blur {
+    background-color: rgba(15, 15, 15, .9);
+    width: 100vw;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.hero .image {
+    height: 60vh;
+    border-radius: 50%;
+    overflow:hidden;
+}
+.hero .image img {
+    height: 100%;
+}
+.hero .tagline h1 {
+    font-size: xxx-large;
+    color: var(--latte-cream);
+}
+/* .hero .tagline button {
+    height: 50px;
+    padding: 0 20px;
+    background-color: var(--caramel-brown);
+} */
+.hero .tagline button:hover {
+    background-color: var(--latte-cream);
+}
+
+.featured-products {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.featured-products hr {
+    width: 100%;
+    height: 4px;
+    background-color: var(--caramel-brown);
+    border: none;
+}
+
+.cards-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.cards-container .card {
+    border: 1px var(--caramel-brown) solid;
+    color: var(--coal-grey);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    width: 200px;
+    min-height: 400px;
+    margin: 40px;
+}
+.card .img-container {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.card .img-container img {
+    width: 100%;
+}
+.card .price, .ratings {
+    font-weight: bold;
+    font-size: large;
+    color: var(--caramel-brown);
+}
+.card .category {
+    font-size: small;
+    color: gray;
+    margin: 0;
+}
+
+
+header {
+    background-image: url('');
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .hero .bg-blur {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 100px 0;
+    }
+    .hero .image {
+        height: 40vh;
+        border-radius: 50%;
+        overflow:hidden;
+    }
+    .hero .image img {
+        height: 100%;
+    }
+}
+
+
+/* FOOTER */
+footer {
+    background-color: var(--coal-grey); /* Footer background color */
+    color: var(--text-light); /* Footer text color */
+    text-align: center;
+    padding: 40px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+footer .logo {
+    height: 50px;
+    border-radius: 50%;
+}
+footer hr {
+    width: 100%;
+}
+
+.footer-section {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-section h3 {
+    color: var(--latte-cream);
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section a {
+    color: var(--latte-cream);
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: var(--caramel-brown);
+}

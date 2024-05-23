@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Haven</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/globals.css">
+    <link rel="stylesheet" href="../styles/mainComponentsStyles.css">
+    
+    <link rel="stylesheet" href="../styles/menu.css">
+    
+    <script src="../data/products.js"></script>
+    <script src="../components/mainComponents.js"></script>
+</head>
+<body>
+    <header id="header">
+        <script>
+            Navbar("header", '../');
+        </script>
+    </header>
+
+    <main>
+        <section class="section products">
+            <div class="page-title">
+                <h1 class="page-title">EXPLORE OUR MENU
+                    <hr>
+                </h1>
+            </div>
+            <div class="sub-section category">
+                <h2>Filter by category</h2>
+                <button class="category-tag" onclick="Category('All', '../')"><p>All</p></button>
+                <button class="category-tag" onclick="Category('Coffee', '../')"><p>Coffee</p></button>
+                <button class="category-tag" onclick="Category('Tea', '../')"><p>Tea</p></button>
+                <button class="category-tag" onclick="Category('Pastry', '../')"><p>Pastry</p></button>
+                <button class="category-tag" onclick="Category('Sandwiches', '../')"><p>Sandwiches</p></button>
+                <button class="category-tag" onclick="Category('Desserts', '../')"><p>Desserts</p></button>
+                <button class="category-tag" onclick="Category('Shakes', '../')"><p>Shakes</p></button>
+            </div>
+
+            <div class="cards-container" id="cards-container">
+                <script>
+                    AllProducts("../");
+                </script>
+            </div>
+
+        </section>
+    </main>
+    
+    <footer id="footer">
+        <script>
+            Footer('footer', '../');
+        </script>
+    </footer>
+    
+</body>
+</html>
